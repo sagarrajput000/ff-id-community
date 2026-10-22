@@ -1,0 +1,258 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="description" content="Free Fire account ban guidance, account recovery information and official support resources.">
+  <title>FF ID Recovery — Free Fire Account Help</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="pulse"></span> COMMUNITY RESOURCE
+    <span class="announce-sep">/</span> Account restriction help & official resources
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FF ID Recovery home">
+      <span class="brand-mark"><img src="assets/1.png" alt=""></span>
+      <span>FF ID <b>RECOVERY</b></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#uid-checker">UID checker</a>
+      <a href="#recover-id">Recover ID</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#guides">Guides</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#official-support">Official support <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> FREE FIRE ACCOUNT GUIDE</div>
+        <h1>YOUR GAME.<br><span>YOUR NEXT</span><br>CHAPTER.</h1>
+        <p class="hero-text">
+          Trying to understand an account restriction? Get clear guidance
+          and find the official support channel for your account.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#uid-checker">
+            Check UID <span>→</span>
+          </a>
+          <a class="button button-ghost" href="#recover-id">
+            <span class="play-icon">↗</span> Recover your ID
+          </a>
+        </div>
+
+        <div class="trust-note">
+          <span class="shield">✓</span>
+          <span><b>Safety first</b><small>Never share your password or verification code.</small></span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-frame">
+          <img src="assets/2.jpeg" alt="Free Fire promotional artwork">
+          <div class="art-label">
+            <span>01 / FEATURED ARTWORK</span>
+            <span>FREE FIRE COMMUNITY</span>
+          </div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-dot"></span> PLAYER RESOURCE</div>
+        <div class="floating-tag tag-bottom"><b>01</b><span>Understand<br>your next step</span></div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>SCROLL TO EXPLORE</span><span class="scroll-line"></span>
+        <span class="hero-bottom-right">BUILT FOR THE COMMUNITY <b>✳</b></span>
+      </div>
+    </section>
+
+    <section class="account-tools section" id="account-tools">
+      <div class="section-kicker">01 — ACCOUNT HELP</div>
+      <div class="section-heading">
+        <h2>YOUR ID.<br><span>YOUR NEXT STEP.</span></h2>
+        <p>Choose the help you need. Account-specific status checks and recovery must be handled through official Garena support channels.</p>
+      </div>
+
+      <div class="account-tool-grid">
+        <article class="account-tool-card status-tool" id="uid-checker">
+          <div class="tool-icon">⌕</div>
+          <span class="tool-label">FREE FIRE UID</span>
+          <h3>Check Account Status</h3>
+          <p>Prepare your UID for Garena’s official Account Check. This site cannot access account records or determine ban status itself.</p>
+          <form class="uid-form" id="uid-checker-form">
+            <label for="player-uid">Player UID</label>
+            <div class="uid-form-row">
+              <input
+                id="player-uid"
+                name="uid"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                maxlength="20"
+                pattern="[0-9]+"
+                placeholder="Enter numeric Free Fire UID"
+                aria-describedby="uid-help uid-result"
+                required
+              >
+              <button class="button button-primary" type="submit">Check UID</button>
+            </div>
+            <small id="uid-help">Your UID stays in this browser and is not sent or saved.</small>
+            <p class="uid-result" id="uid-result" role="status" aria-live="polite"></p>
+          </form>
+          <div class="uid-appeal-view" id="uid-appeal-view" hidden>
+            <span class="tool-label">ACCOUNT STATUS</span>
+            <h3>Status can’t be verified here</h3>
+            <p>This site doesn’t have access to Garena’s account records or a documented status-check API. We can’t confirm whether this UID is banned.</p>
+            <output class="uid-review-value" id="uid-review-value" aria-label="UID to check"></output>
+            <p class="uid-disclaimer">Only Garena can provide an authoritative account-status result. Check only UIDs you’re authorized to look up.</p>
+            <button class="uid-back-button" id="uid-back-button" type="button">← Back to UID checker</button>
+          </div>
+          <a class="text-link uid-support-link" href="https://ffsupport.garena.com/" target="_blank" rel="noopener noreferrer">
+            Visit official support <span>↗</span>
+          </a>
+        </article>
+
+        <article class="account-tool-card recover-tool" id="recover-id">
+          <div class="tool-icon">↗</div>
+          <span class="tool-label">ACCOUNT RECOVERY</span>
+          <h3>Recover Your ID</h3>
+          <p>If you've lost access to your account, follow Garena's official account-help instructions. Never share your password or OTP with third-party websites.</p>
+          <a class="button button-dark" href="https://support-freefireind.garena.com/ind/categories/ind_account_issues" target="_blank" rel="noopener noreferrer">
+            Get recovery help <span>↗</span>
+          </a>
+        </article>
+      </div>
+
+      <p class="tool-safety-note"><span>✓</span> We never ask for your password, OTP, recovery codes or social login details.</p>
+    </section>
+
+    <section class="stats-strip" aria-label="Site principles">
+      <div><span class="stat-icon">◎</span><span><b>Clear guidance</b><small>Know what to check</small></span></div>
+      <div><span class="stat-icon">↗</span><span><b>Official channels</b><small>Use verified support</small></span></div>
+      <div><span class="stat-icon">◇</span><span><b>Account safety</b><small>Keep details private</small></span></div>
+    </section>
+
+    <section class="section intro-section" id="how-it-works">
+      <div class="section-kicker">02 — START HERE</div>
+      <div class="section-heading">
+        <h2>TAKE THE<br><span>RIGHT NEXT STEP.</span></h2>
+        <p>Account restrictions can have different causes. Follow a careful process and use official support for account-specific decisions.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">01</div><div class="step-symbol">⌕</div>
+          <h3>Check the notice</h3>
+          <p>Read the in-game message and note any reason or duration shown. Avoid guessing what caused the restriction.</p>
+          <span class="step-foot">REVIEW YOUR STATUS</span>
+        </article>
+        <article class="step-card featured-step">
+          <div class="step-number">02</div><div class="step-symbol">↗</div>
+          <h3>Visit official support</h3>
+          <p>Open the official support channel and follow its current instructions for account-related questions.</p>
+          <span class="step-foot">USE VERIFIED CHANNELS</span>
+        </article>
+        <article class="step-card">
+          <div class="step-number">03</div><div class="step-symbol">✓</div>
+          <h3>Submit accurate details</h3>
+          <p>If support offers an appeal, provide truthful information through its secure form and wait for a response.</p>
+          <span class="step-foot">BE PATIENT & ACCURATE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-banner">
+      <div class="feature-image"><img src="assets/3.jpeg" alt="Free Fire character artwork"></div>
+      <div class="feature-copy">
+        <div class="section-kicker">03 — KEEP IT FAIR</div>
+        <h2>PLAY FAIR.<br><span>STAY SECURE.</span></h2>
+        <p>Use official game support. No third-party website can guarantee an account will be unbanned. Never pay someone who promises a guaranteed result.</p>
+        <a class="text-link" href="#official-support">Find official resources <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section guides-section" id="guides">
+      <div class="section-kicker">04 — LEARN & UNDERSTAND</div>
+      <div class="section-heading">
+        <h2>KNOW THE<br><span>RULES OF THE GAME.</span></h2>
+        <p>These videos provide background on anti-cheat policies and matchmaking updates. Availability is controlled by YouTube.</p>
+      </div>
+
+      <div class="video-grid">
+        <a class="video-card" href="https://www.youtube.com/watch?v=HiT_BGam61s" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb"><img src="assets/7.jpeg" alt="2022 Anti-Hack Midyear Review thumbnail"><span class="video-play">▶</span></div>
+          <div class="video-meta"><span>ANTI-CHEAT</span><span>↗</span></div>
+          <h3>2022 Anti-Hack Midyear Review</h3><p>Learn about anti-cheat updates and fair play.</p>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=YT-TVmpTMEY" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb"><img src="assets/8.jpeg" alt="Operation Laura annual review thumbnail"><span class="video-play">▶</span></div>
+          <div class="video-meta"><span>ANNUAL REVIEW</span><span>↗</span></div>
+          <h3>Operation Laura: Anti-Hack Review</h3><p>A look back at an anti-hack update.</p>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=Ui_lzYMTqQc" target="_blank" rel="noopener noreferrer">
+          <div class="video-thumb"><img src="assets/9.jpeg" alt="Matchmaking strategy adjustment thumbnail"><span class="video-play">▶</span></div>
+          <div class="video-meta"><span>MATCHMAKING</span><span>↗</span></div>
+          <h3>Matchmaking Strategy Adjustment</h3><p>Understand changes designed to support fair matches.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="support-section" id="official-support">
+      <div class="support-card">
+        <div class="support-orbit orbit-one"></div><div class="support-orbit orbit-two"></div>
+        <div class="support-content">
+          <div class="section-kicker">05 — THE OFFICIAL ROUTE</div>
+          <h2>NEED ACCOUNT-SPECIFIC HELP?</h2>
+          <p>For account status, bans or appeals, use Garena's official support website. This independent guide cannot access or change player accounts.</p>
+          <a class="button button-primary" href="https://ffsupport.garena.com/" target="_blank" rel="noopener noreferrer">Open Garena Support <span>↗</span></a>
+          <small>Check the website domain before signing in.</small>
+        </div>
+        <div class="support-stamp">PLAYER<br>FIRST <span>✳</span></div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-kicker">06 — QUICK ANSWERS</div>
+      <div class="faq-layout">
+        <div>
+          <h2>GOOD TO<br><span>KNOW.</span></h2>
+          <p class="faq-intro">A few important things to remember when dealing with account restrictions.</p>
+        </div>
+        <div class="faq-list">
+          <details><summary>Can this website unban my account? <span>+</span></summary><p>No. This is an informational community page. Only official game support can review account-specific cases.</p></details>
+          <details><summary>Can anyone guarantee an unban? <span>+</span></summary><p>No third party can honestly guarantee a result. Be cautious of people asking for money, passwords or verification codes.</p></details>
+          <details><summary>What should I include in an appeal? <span>+</span></summary><p>Follow the official support form's instructions, explain the issue clearly and provide only accurate information requested by the official channel.</p></details>
+          <details><summary>Is it safe to share my login details? <span>+</span></summary><p>No. Never share your password, one-time code, recovery code or other secret login information with anyone.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark"><img src="assets/1.png" alt=""></span><span>FF ID <b>RECOVERY</b></span>
+    </a>
+    <p>An independent community guide. Not affiliated with or endorsed by Garena or Free Fire.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> FF ID Recovery Guide</span><a href="#home">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
